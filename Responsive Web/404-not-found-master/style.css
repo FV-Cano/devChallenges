@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+/* * || UNIVERSAL SETTERS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* * || VARIABLES */
+:root {
+	/* COLOURS */
+
+	--FONT-COLOR-H1: #333333;
+	--FONT-COLOR-H2: #4f4f4f;
+}
+
+header {
+	font-family: "Inconsolata", monospace;
+	margin: 2rem 0 6rem 6rem;
+	gap: 10rem;
+}
+
+.message {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	position: fixed;
+}
+
+.text {
+	display: inline-block;
+	position: relative;
+	left: 5rem;
+	max-width: 50%;
+	height: fit-content;
+}
+
+.text h1 {
+	font-family: "Space Mono";
+	color: var(--FONT-COLOR-H1);
+	position: inherit;
+	top: -5rem;
+	margin-left: 6rem;
+	padding-bottom: 3rem;
+	font-size: 4rem;
+	width: 70%;
+}
+
+.text h2 {
+	font-family: "Space Mono";
+	color: var(--FONT-COLOR-H2);
+	position: inherit;
+	top: -3rem;
+	margin-left: 6rem;
+	padding-bottom: 3rem;
+	font-size: 1.5rem;
+	width: 45%;
+}
+
+button {
+	margin-left: 6rem;
+	position: fixed;
+	font-family: "Space Mono";
+	background-color: var(--FONT-COLOR-H1);
+	color: #fff;
+	padding: 1rem 2rem;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover {
+	background-color: #fff;
+	color: var(--FONT-COLOR-H1);
+}
+
+.image {
+	padding-left: 4rem;
+	display: inline-block;
+	max-width: 40%;
+	position: relative;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%) translateY(100%);
+	animation: pop-up 1s ease forwards, wiggle 2s ease-in-out 1s infinite;
+}
+
+/* * || SCARECROW ANIMATION */
+
+@keyframes pop-up {
+	from {
+		transform: translateX(-50%) translateY(100%);
+	}
+	to {
+		transform: translateX(-50%) translateY(0%);
+	}
+}
+
+@keyframes wiggle {
+	0% {
+		transform: translateX(-50%) rotateZ(0deg);
+	}
+	25% {
+		transform: translateX(-50%) rotateZ(5deg);
+	}
+	50% {
+		transform: translateX(-50%) rotateZ(-5deg);
+	}
+	75% {
+		transform: translateX(-50%) rotateZ(5deg);
+	}
+	100% {
+		transform: translateX(-50%) rotateZ(0deg);
+	}
+}
+
+footer {
+	padding: 0.5rem;
+	font-family: "Montserrat", sans-serif;
+	color: #bdbdbd;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+}
+
+.name {
+	text-decoration: underline;
+	font-weight: 600;
+}
+
+/* * || LINK STYLING */
+
+.name,
+a {
+	color: #bdbdbd;
+}
+.name,
+a:visited {
+	color: purple;
+}
+.name,
+a:hover {
+	color: #333333;
+	transition: color 0.3s ease-in-out 0s;
+}
+.name,
+a:active {
+	color: #b17d22;
+	transition: color 0.3s ease-in-out 0s;
+}
+
+/* ! || NOTES
+
+   ! - Use inline-block to match the size of both the text and the container
+   ! - transition: [property] [duration] [timing-function] [delay];
+*/
