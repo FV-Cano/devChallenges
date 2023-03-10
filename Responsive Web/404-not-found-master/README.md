@@ -56,4 +56,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 ## Contact
 
 - LinkedIn [Federico Vicente Cano](https://www.linkedin.com/in/cano-federico/)
-- GitHub [@your-username](https://github.com/FV-Cano)
+- GitHub [FV-Cano](https://github.com/FV-Cano)
