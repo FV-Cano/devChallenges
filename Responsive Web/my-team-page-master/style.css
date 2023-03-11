@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 /* * || UNIVERSAL SETTERS */
 
@@ -15,14 +16,17 @@
 	/* COLOURS */
 
 	--FONT-COLOR: #000;
+	--MAX-WIDTH-DESKTOP: 925px;
 }
 
 .header {
+	max-width: var(--MAX-WIDTH-DESKTOP);
 	font-family: "PT Serif", serif;
 	font-weight: 700;
-	padding: 6rem 2rem;
-	display: inline-flex;
-	justify-content: center;
+	padding: 6rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	gap: 10rem;
 	width: 100%;
 	color: var(--FONT-COLOR);
@@ -50,32 +54,45 @@
 	font-size: 18px;
 }
 
+.gallery {
+	display: flex;
+	align-items: center;
+	flex-direction: column; /* I'm not understanding why this center the flex */
+}
+
 .crew {
+	align-items: center;
+	max-width: var(--MAX-WIDTH-DESKTOP);
+	margin: 4rem 0;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
-	margin: 1rem 2rem;
+	justify-content: space-between;
+	gap: 2rem;
+	flex-direction: row;
+	position: relative;
 }
 
 .crew-member {
 	display: flex;
 	flex-direction: column;
-	width: 240px;
 	position: relative;
-	margin-bottom: 2rem;
+	margin: 8rem 0;
+	height: 300px;
+	width: 240px;
 }
 
 img {
 	padding-bottom: 1rem;
 	width: 240px;
 	height: 350px;
+	align-self: center;
 }
 
 .crew-member h1 {
 	font-family: "Poppins", sans-serif;
 	font-size: 18px;
 	font-weight: 600;
+	position: relative;
 }
 
 .crew-member h2 {
@@ -85,9 +102,58 @@ img {
 	font-weight: 400;
 	text-transform: uppercase;
 	position: absolute;
-	transform: rotate(90deg); /* applies rotation to the wrapper */
-	transform-origin: 0 0; /* sets the origin of the rotation to top left */
+	transform: rotate(90deg);
+	transform-origin: 0 0;
 	right: -130px;
+}
+
+.crew-member:nth-child(2),
+.crew-member:nth-child(5) {
+	margin-bottom: auto;
+}
+.crew-member:nth-child(1),
+.crew-member:nth-child(3),
+.crew-member:nth-child(4),
+.crew-member:nth-child(6) {
+	margin-top: auto;
+}
+
+footer {
+	margin-top: 7rem;
+	padding: 1rem 0;
+	font-family: "Montserrat", sans-serif;
+	color: #bdbdbd;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+}
+
+.name {
+	text-decoration: underline;
+	font-weight: 600;
+}
+
+/* * || LINK STYLING */
+
+.name,
+a {
+	color: #bdbdbd;
+}
+.name,
+a:visited {
+	color: purple;
+}
+.name,
+a:hover {
+	color: #333333;
+	transition: color 0.3s ease-in-out 0s;
+}
+.name,
+a:active {
+	color: #b17d22;
+	transition: color 0.3s ease-in-out 0s;
 }
 
 /* ! || NOTES
@@ -100,4 +166,6 @@ img {
 	- 2nd: Thanks to the first step, I can now set the child element to position: absolute. with this, the child element will stablish itself at the start of the parent element.
 	- 3rd: Set the child element to transform: rotate(90deg)
 	- 4th: But that's not enough, when you rotate an element normally it breaks the layout flow, so the key to this rotation is to set the transform-origin to 0 0, this will make the rotation start at the top left corner of the element. 
+
+	! Something I think I learned is that is maybe advisable to always use a container for each element or set of elements.
 */
