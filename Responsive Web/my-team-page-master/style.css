@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* * || UNIVERSAL SETTERS */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* * || VARIABLES */
+
+:root {
+	/* COLOURS */
+
+	--FONT-COLOR: #000;
+}
+
+.header {
+	font-family: "PT Serif", serif;
+	font-weight: 700;
+	padding: 6rem 2rem;
+	display: inline-flex;
+	justify-content: center;
+	gap: 10rem;
+	width: 100%;
+	color: var(--FONT-COLOR);
+}
+
+.title {
+	position: relative;
+}
+
+.about-us {
+	font-family: "Poppins", sans-serif;
+	width: 437px;
+	height: 87px;
+	color: var(--FONT-COLOR);
+}
+
+.about-us h1 {
+	font-weight: 600;
+	font-size: 18px;
+	padding-bottom: 1rem;
+}
+
+.about-us p {
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.crew {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 1rem 2rem;
+}
+
+.crew-member {
+	display: flex;
+	flex-direction: column;
+	width: 240px;
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+img {
+	padding-bottom: 1rem;
+	width: 240px;
+	height: 350px;
+}
+
+.crew-member h1 {
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.crew-member h2 {
+	min-width: 110px;
+	font-family: "PT serif", sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	position: absolute;
+	transform: rotate(90deg); /* applies rotation to the wrapper */
+	transform-origin: 0 0; /* sets the origin of the rotation to top left */
+	right: -130px;
+}
+
+/* ! || NOTES
+
+   ! Flexbox is really useful, I need to understand it better.
+  
+	* Rotating was painful, what I need to do to achieve a clean rotation so far is:
+
+	- 1st: Set the parent element to position: relative.
+	- 2nd: Thanks to the first step, I can now set the child element to position: absolute. with this, the child element will stablish itself at the start of the parent element.
+	- 3rd: Set the child element to transform: rotate(90deg)
+	- 4th: But that's not enough, when you rotate an element normally it breaks the layout flow, so the key to this rotation is to set the transform-origin to 0 0, this will make the rotation start at the top left corner of the element. 
+*/

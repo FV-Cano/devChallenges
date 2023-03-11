@@ -211,4 +211,6 @@ a:active {
 
    ! - Use inline-block to match the size of both the text and the container
    ! - transition: [property] [duration] [timing-function] [delay];
+   ! - Display: inline-flex; to make the items align horizontally
+   ! - Padding: 1st 2nd 3rd 4th; 1st = top, 2nd = right, 3rd = bottom, 4th = left
 */
