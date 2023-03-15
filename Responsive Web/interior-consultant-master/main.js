@@ -2,9 +2,13 @@
 document.addEventListener("DOMContentLoaded", function () {
 	const menuIcon = document.querySelector(".hamburger");
 	const header = document.querySelector(".header-container");
+	const headerList = document.querySelector(".header-list");
 
 	menuIcon.addEventListener("click", function () {
 		header.classList.toggle("active");
+		headerList.classList.toggle("active");
+		const icon = menuIcon.querySelector("ion-icon");
+		icon.name = icon.name === "menu" ? "close" : "menu";
 	});
 });
 
