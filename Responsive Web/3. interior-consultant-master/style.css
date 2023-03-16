@@ -111,7 +111,7 @@ ion-icon {
 .main-container {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	margin: 0rem 2rem;
 }
 
@@ -119,8 +119,11 @@ ion-icon {
 	color: #fff;
 	display: flex;
 	flex-direction: column;
+	max-width: 450px;
+	margin-left: 2rem;
 }
 
+/* ! Affect al children */
 .text-container > * {
 	padding: 1rem 0;
 }
@@ -137,21 +140,31 @@ ion-icon {
 	font-size: 24px;
 }
 
+.text-container h2 span {
+	white-space: nowrap;
+}
+
 .text-container a {
+	display: flex;
 	font-family: "Montserrat", serif;
 	font-weight: 700;
 	font-size: 18px;
+	text-decoration: none;
+	color: #fff;
+	height: 5rem;
+	align-items: center;
 }
 
 .text-container ion-icon {
+	padding: 0 0 0 1rem;
 }
 
 /* IMAGE CONTAINER */
 
 .img-container {
-	margin: 2rem;
+	margin: 4rem;
 	display: flex;
-	height: 800px;
+	/* height: 800px; */
 }
 
 .main-picture {
