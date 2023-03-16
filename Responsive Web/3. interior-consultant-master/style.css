@@ -37,7 +37,7 @@ body {
 	text-transform: uppercase;
 	color: #fff;
 	background-color: #181719;
-	border: 1px solid #fff; /* Solid border removes the shadow */
+	border: 1px solid #fff; /* ! Solid border removes the shadow */
 	line-height: 15px;
 	transition: background-color, 0.3s ease-in-out;
 }
@@ -64,16 +64,16 @@ body {
 
 .header-list li {
 	padding: 0rem 2rem;
-	width: 160px; /* Adding fixed width so when hovering the list doesn't expand */
+	width: 160px; /* ! Adding fixed width so when hovering the list doesn't expand */
 }
 
 .header-list li span {
 	padding-bottom: 0.5rem;
-	border-bottom: 2px solid transparent; /* Adding text decoration is not a good idea. There would not be a gap between underline and text */
+	border-bottom: 2px solid transparent; /* ! Adding text decoration is not a good idea. There would not be a gap between underline and text */
 	transition: border-bottom-color 0.3s ease-in-out;
 }
 
-/* Wrapping in span and hovering the span to only hover text */
+/* ! Wrapping in span and hovering the span to only hover text */
 .header-list li span:hover {
 	max-width: inherit;
 	font-weight: 700;
@@ -103,6 +103,64 @@ ion-icon {
 	background-color: var(--BACKGROUND-COLOR);
 	display: none;
 }
+
+/* MAIN CONTAINER */
+
+/* TEXT CONTAINER */
+
+.main-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0rem 2rem;
+}
+
+.text-container {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+.text-container > * {
+	padding: 1rem 0;
+}
+
+.text-container h1 {
+	font-family: "Lora", serif;
+	font-weight: 500;
+	font-size: 48px;
+}
+
+.text-container h2 {
+	font-family: "Montserrat", serif;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.text-container a {
+	font-family: "Montserrat", serif;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.text-container ion-icon {
+}
+
+/* IMAGE CONTAINER */
+
+.img-container {
+	margin: 2rem;
+	display: flex;
+	height: 800px;
+}
+
+.main-picture {
+	width: 800px;
+	height: auto;
+	max-height: 666px;
+}
+
+/* MEDIA QUERIES */
 
 @media only screen and (max-width: 760px) {
 	.hamburger {
