@@ -164,13 +164,70 @@ ion-icon {
 .img-container {
 	margin: 4rem;
 	display: flex;
+	max-width: 800px;
 	/* height: 800px; */
 }
 
 .main-picture {
-	width: 800px;
+	max-width: 100%;
 	height: auto;
-	max-height: 666px;
+}
+
+/* ! To resize the image, the main container needs a defined max-width, so its child can have a max width of the 100% of the parent, and an auto height considering the width of the image  */
+
+/* HERO */
+
+.hero {
+	max-width: 450px;
+	max-height: 200px;
+	background-color: #181719;
+	padding: 1rem;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	bottom: 7.4rem;
+	right: 8rem;
+}
+
+.hero img {
+	align-self: flex-start;
+	width: 80px;
+	height: auto;
+	border-radius: 50%;
+	padding-bottom: 0.5rem;
+}
+
+.hero > * {
+	padding: 5px;
+}
+
+.hero .name,
+.job {
+	align-self: flex-start;
+}
+
+.hero .name {
+	font-family: "Montserrat";
+	font-weight: 500;
+	font-size: 14px;
+	color: #fff;
+	line-height: 15px;
+}
+
+.hero .job {
+	font-family: "Montserrat";
+	font-weight: 500;
+	font-size: 12px;
+	color: #828282;
+	line-height: 15px;
+}
+
+.hero .description {
+	font-family: "Lora";
+	font-weight: 700;
+	font-size: 24px;
+	color: #fff;
+	line-height: 30px;
 }
 
 /* MEDIA QUERIES */
