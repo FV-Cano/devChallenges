@@ -121,6 +121,8 @@ ion-icon {
 	flex-direction: column;
 	max-width: 450px;
 	margin-left: 2rem;
+	position: relative;
+	top: -6rem;
 }
 
 /* ! Affect al children */
@@ -202,7 +204,7 @@ ion-icon {
 
 .hero img {
 	align-self: flex-start;
-	width: 80px;
+	width: 60px;
 	height: auto;
 	border-radius: 50%;
 	padding-bottom: 0.5rem;
@@ -218,7 +220,7 @@ ion-icon {
 	font-weight: 500;
 	font-size: 14px;
 	color: #fff;
-	line-height: 15px;
+	line-height: 17px;
 	padding-bottom: 10px;
 }
 
@@ -285,5 +287,22 @@ ion-icon {
 
 	.header-list.active li {
 		padding: 1.5rem 0;
+	}
+}
+
+@media (max-width: 1420px) {
+	.img-container {
+		max-width: 800px;
+		position: relative;
+	}
+
+	.main-picture {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.img-container .hero {
+		width: 80%;
+		max-width: 450px;
 	}
 }
