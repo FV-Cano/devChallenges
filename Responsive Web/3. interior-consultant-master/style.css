@@ -171,12 +171,6 @@ ion-icon {
 	flex-direction: column;
 }
 
-.main-picture {
-	/* max-width: 100%;
-	max-height: 600px;
-	height: auto; */
-}
-
 /* ! To resize the image, the main container needs a defined max-width, so its child can have a max width of the 100% of the parent, and an auto height considering the width of the image  */
 
 /* * || HERO */
