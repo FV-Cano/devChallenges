@@ -29,7 +29,17 @@ function App() {
 						</div>
 						<div className="outlineButton-alt">
 							<p className="alt">&: hover, &:focus</p>
-							<Button />
+							<Button variant="outlined" />
+						</div>
+					</div>
+					<div className="group">
+						<div className="textButton">
+							<p className="name">&lt;Button variant ="text" /&gt;</p>
+							<Button variant="text" />
+						</div>
+						<div className="textButton-alt">
+							<p className="alt">&: hover, &:focus</p>
+							<Button variant="text" />
 						</div>
 					</div>
 				</div>

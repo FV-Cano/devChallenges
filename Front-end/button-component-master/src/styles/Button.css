@@ -19,8 +19,7 @@
 
 /* * OUTLINE-ALT */
 
-.group .outlineButton .button,
-.group .outlineButton-alt .button {
+.button.outlined {
 	background-color: transparent;
 	border: 1px solid #3d5afe;
 	color: #3d5afe;
