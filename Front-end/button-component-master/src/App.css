@@ -51,6 +51,11 @@
 }
 
 .buttonGroups,
+#third .group {
+	gap: 5rem;
+}
+
+.buttonGroups,
 #fourth {
 	max-width: 0.5rem;
 }

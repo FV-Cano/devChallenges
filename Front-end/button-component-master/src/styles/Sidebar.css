@@ -3,7 +3,7 @@
 
 .sidebar {
 	display: inline-flex;
-	height: 100vh;
+	height: 100%;
 	flex-direction: column;
 	background-color: #fafbfd;
 	padding: 3rem 5rem 0rem 3rem;

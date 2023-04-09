@@ -75,21 +75,37 @@ function App() {
 						</div>
 					</div>
 				</div>
+				<div className="buttonGroups" id="third">
+					<div className="group">
+						<div className="smallButton">
+							<p className="name">&lt;Button size="sm" /&gt;</p>
+							<Button size="sm" color="primary" />
+						</div>
+						<div className="midButton">
+							<p className="name">&lt;Button size="md" /&gt;</p>
+							<Button color="primary" />
+						</div>
+						<div className="largeButton">
+							<p className="name">&lt;Button size="lg" /&gt;</p>
+							<Button size="lg" color="primary" />
+						</div>
+					</div>
+				</div>
 				<div className="buttonGroups" id="fourth">
 					<div className="group">
 						<div className="defaultButton">
 							<p className="name">&lt;Button color="default" /&gt;</p>
 							<Button />
 						</div>
-						<div className="defaultButton-alt">
+						<div className="primaryButton">
 							<p className="name">&lt;Button color="primary" /&gt;</p>
 							<Button color="primary" content="Primary" />
 						</div>
-						<div className="defaultButton">
+						<div className="secondaryButton">
 							<p className="name">&lt;Button color="secondary" /&gt;</p>
 							<Button color="secondary" content="Secondary" />
 						</div>
-						<div className="defaultButton-alt">
+						<div className="dangerButton">
 							<p className="name">&lt;Button color="danger" /&gt;</p>
 							<Button color="danger" content="Danger" />
 						</div>
