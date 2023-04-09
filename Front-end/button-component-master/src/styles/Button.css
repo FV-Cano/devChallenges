@@ -44,6 +44,24 @@
 	box-shadow: none;
 }
 
+/* * DISABLED */
+
+.button.disabled {
+	background-color: #e0e0e0;
+	border: none;
+	color: #828282;
+	box-shadow: none;
+	cursor: not-allowed;
+}
+
+.button.text.disabled {
+	background-color: transparent;
+	border: none;
+	color: #828282;
+	box-shadow: none;
+	cursor: not-allowed;
+}
+
 /* ! || Alt-styles */
 
 /* * DEFAULT-ALT */
