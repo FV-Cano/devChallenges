@@ -13,11 +13,12 @@
 	width: 81px;
 	height: 36px;
 	margin: 1rem 0;
+	transition: background-color 0.3s ease-in-out;
 }
 
 /* ! || Default-styles */
 
-/* * OUTLINE-ALT */
+/* * OUTLINE */
 
 .button.outlined {
 	background-color: transparent;
@@ -25,13 +26,18 @@
 	color: #3d5afe;
 }
 
+/* * TEXT */
+
+.button.text {
+	background-color: transparent;
+	border: none;
+	color: #3d5afe;
+	box-shadow: none;
+}
+
 /* ! || Alt-styles */
 
 /* * DEFAULT-ALT */
-
-.defaultButton-alt .button {
-	transition: background-color 0.3s ease-in-out;
-}
 
 .defaultButton-alt .button:hover,
 .defaultButton-alt .button:focus {
@@ -41,12 +47,16 @@
 
 /* * OUTLINE-ALT */
 
-.outlineButton-alt .button {
-	transition: background-color 0.3s ease-in-out;
-}
-
 .outlineButton-alt .button:hover,
 .outlineButton-alt .button:focus {
+	background-color: #2962ff1a;
+	cursor: pointer;
+}
+
+/* * TEXT-ALT */
+
+.textButton-alt .button:hover,
+.textButton-alt .button:focus {
 	background-color: #2962ff1a;
 	cursor: pointer;
 }

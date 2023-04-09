@@ -1,7 +1,7 @@
 import "../styles/Button.css";
 
 interface ButtonProps {
-	variant: "text" | "outlined";
+	variant: "default" | "text" | "outlined";
 	disableShadow: boolean;
 	disabled: boolean;
 	startIcon: string;
@@ -12,7 +12,7 @@ interface ButtonProps {
 }
 
 const defaultProps: ButtonProps = {
-	variant: "text",
+	variant: "default",
 	disableShadow: true,
 	disabled: false,
 	startIcon: "",
