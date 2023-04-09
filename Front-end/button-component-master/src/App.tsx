@@ -10,16 +10,37 @@ function App() {
 				<Sidebar />
 			</div>
 			<div className="main">
-				<Button
-					variant="text"
-					disableShadow={true}
-					disabled={false}
-					startIcon=""
-					endIcon=""
-					size="md"
-					color="default"
-					content="Default"
-				/>
+				<h1>Buttons</h1>
+				<div className="buttonGroups">
+					<div className="defaultGroup">
+						<div className="defaultButton">
+							<p className="name">&lt;Button /&gt;</p>
+							<Button
+								variant="text"
+								disableShadow={true}
+								disabled={false}
+								startIcon=""
+								endIcon=""
+								size="md"
+								color="default"
+								content="Default"
+							/>
+						</div>
+						<div className="defaultButton-alt">
+							<p className="alt">&: hover, &:focus</p>
+							<Button
+								variant="text"
+								disableShadow={true}
+								disabled={false}
+								startIcon=""
+								endIcon=""
+								size="md"
+								color="default"
+								content="Default"
+							/>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

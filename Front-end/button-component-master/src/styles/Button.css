@@ -1,1 +1,23 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.button {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	color: #3f3f3f;
+	line-height: 20.27px;
+	border-radius: 6px;
+	background-color: #e0e0e0;
+	border: none;
+	box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+	width: 81px;
+	height: 36px;
+	margin: 1rem 0;
+}
+
+.defaultButton-alt:hover .button,
+.defaultButton-alt:focus .button {
+	background-color: #aeaeae;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}

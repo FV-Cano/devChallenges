@@ -12,3 +12,37 @@
 .App {
 	display: flex;
 }
+
+.main {
+	display: flex;
+	flex-direction: column;
+	padding: 4rem 6rem;
+}
+
+.main h1 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-size: 2rem;
+	color: #4f4f4f;
+	margin-bottom: 2rem;
+}
+
+.buttonGroups {
+	font-family: "Ubuntu Mono", monospace;
+	font-weight: 400;
+}
+
+.buttonGroups .name {
+	color: #333333;
+}
+
+.buttonGroups .alt {
+	color: #828282;
+}
+
+/* Default group styling -------- */
+
+.defaultGroup {
+	display: flex;
+	gap: 8rem;
+}
