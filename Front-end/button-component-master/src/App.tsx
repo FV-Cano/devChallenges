@@ -54,7 +54,7 @@ function App() {
 							<Button disabled={true} />
 						</div>
 						<div className="disableButton-alt">
-							<p className="alt">Button variant ="text" disabled</p>
+							<p className="name">Button variant ="text" disabled</p>
 							<Button variant="text" disabled={true} />
 						</div>
 					</div>
@@ -65,13 +65,33 @@ function App() {
 							<p className="name">
 								&lt;Button startIcon="local_grocery_store" /&gt;
 							</p>
-							<Button disableShadow={false} startIcon="local_grocery_store" />
+							<Button color="primary" startIcon="local_grocery_store" />
 						</div>
 						<div className="iconButton-alt">
-							<p className="alt">
+							<p className="name">
 								&lt;Button endIcon="local_grocery_store" /&gt;
 							</p>
-							<Button disableShadow={false} endIcon="local_grocery_store" />
+							<Button color="primary" endIcon="local_grocery_store" />
+						</div>
+					</div>
+				</div>
+				<div className="buttonGroups" id="fourth">
+					<div className="group">
+						<div className="defaultButton">
+							<p className="name">&lt;Button color="default" /&gt;</p>
+							<Button />
+						</div>
+						<div className="defaultButton-alt">
+							<p className="name">&lt;Button color="primary" /&gt;</p>
+							<Button color="primary" content="Primary" />
+						</div>
+						<div className="defaultButton">
+							<p className="name">&lt;Button color="secondary" /&gt;</p>
+							<Button color="secondary" content="Secondary" />
+						</div>
+						<div className="defaultButton-alt">
+							<p className="name">&lt;Button color="danger" /&gt;</p>
+							<Button color="danger" content="Danger" />
 						</div>
 					</div>
 				</div>
