@@ -27,21 +27,36 @@
 	margin-bottom: 2rem;
 }
 
-.buttonGroups {
+.buttonGroups,
+#first {
 	font-family: "Ubuntu Mono", monospace;
 	font-weight: 400;
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
+	max-width: 400px;
+}
+
+.buttonGroups,
+#second {
 	max-width: 100%;
+	gap: 1rem;
+}
+
+.buttonGroups,
+#second .group {
+	gap: 4rem;
+	margin-top: 1rem;
 }
 
 .buttonGroups .name {
 	color: #333333;
+	white-space: nowrap;
 }
 
 .buttonGroups .alt {
 	color: #828282;
+	white-space: nowrap;
 }
 
 /* Default group styling -------- */

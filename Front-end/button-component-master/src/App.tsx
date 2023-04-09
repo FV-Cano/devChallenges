@@ -11,7 +11,7 @@ function App() {
 			</div>
 			<div className="main">
 				<h1>Buttons</h1>
-				<div className="buttonGroups">
+				<div className="buttonGroups" id="first">
 					<div className="group">
 						<div className="defaultButton">
 							<p className="name">&lt;Button /&gt;</p>
@@ -56,6 +56,22 @@ function App() {
 						<div className="disableButton-alt">
 							<p className="alt">Button variant ="text" disabled</p>
 							<Button variant="text" disabled={true} />
+						</div>
+					</div>
+				</div>
+				<div className="buttonGroups" id="second">
+					<div className="group">
+						<div className="iconButton">
+							<p className="name">
+								&lt;Button startIcon="local_grocery_store" /&gt;
+							</p>
+							<Button disableShadow={false} startIcon="local_grocery_store" />
+						</div>
+						<div className="iconButton-alt">
+							<p className="alt">
+								&lt;Button endIcon="local_grocery_store" /&gt;
+							</p>
+							<Button disableShadow={false} endIcon="local_grocery_store" />
 						</div>
 					</div>
 				</div>
