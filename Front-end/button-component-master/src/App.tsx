@@ -15,57 +15,21 @@ function App() {
 					<div className="group">
 						<div className="defaultButton">
 							<p className="name">&lt;Button /&gt;</p>
-							<Button
-								variant="text"
-								disableShadow={true}
-								disabled={false}
-								startIcon=""
-								endIcon=""
-								size="md"
-								color="default"
-								content="Default"
-							/>
+							<Button />
 						</div>
 						<div className="defaultButton-alt">
 							<p className="alt">&: hover, &:focus</p>
-							<Button
-								variant="text"
-								disableShadow={true}
-								disabled={false}
-								startIcon=""
-								endIcon=""
-								size="md"
-								color="default"
-								content="Default"
-							/>
+							<Button />
 						</div>
 					</div>
 					<div className="group">
 						<div className="defaultButton">
 							<p className="name">&lt;Button variant ="outline" /&gt;</p>
-							<Button
-								variant="outlined"
-								disableShadow={true}
-								disabled={false}
-								startIcon=""
-								endIcon=""
-								size="md"
-								color="default"
-								content="Default"
-							/>
+							<Button />
 						</div>
 						<div className="defaultButton-alt">
 							<p className="alt">&: hover, &:focus</p>
-							<Button
-								variant="text"
-								disableShadow={true}
-								disabled={false}
-								startIcon=""
-								endIcon=""
-								size="md"
-								color="default"
-								content="Default"
-							/>
+							<Button />
 						</div>
 					</div>
 				</div>

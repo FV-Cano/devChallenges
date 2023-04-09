@@ -11,27 +11,41 @@ interface ButtonProps {
 	content: string;
 }
 
-export const Button = ({
-	variant,
-	disableShadow,
-	disabled,
-	startIcon,
-	endIcon,
-	size,
-	color,
-	content,
-}: ButtonProps) => {
+const defaultProps: ButtonProps = {
+	variant: "text",
+	disableShadow: true,
+	disabled: false,
+	startIcon: "",
+	endIcon: "",
+	size: "md",
+	color: "default",
+	content: "Default",
+};
+
+export const Button = (props: ButtonProps) => {
+	const {
+		variant,
+		disableShadow,
+		disabled,
+		startIcon,
+		endIcon,
+		size,
+		color,
+		content,
+	} = props;
+
 	return (
 		<button
 			className={`button ${variant} ${size} ${color}
-            ${disableShadow ? "" : "shadow"}
-            ${disabled ? "disabled" : ""}
-            `}
+			${disableShadow ? "disableShadow" : ""}
+			${disabled ? "disabled" : ""}
+		`}
 		>
-			{/* prettier-ignore */}
 			{startIcon ? <span className="material-icons">{startIcon}</span> : ""}
-			{<span className="textContent">{content}</span>}
+			<span className="textContent">{content}</span>
 			{endIcon ? <span className="material-icons">{endIcon}</span> : ""}
 		</button>
 	);
 };
+
+Button.defaultProps = defaultProps;
