@@ -23,11 +23,11 @@ function App() {
 						</div>
 					</div>
 					<div className="group">
-						<div className="defaultButton">
+						<div className="outlineButton">
 							<p className="name">&lt;Button variant ="outline" /&gt;</p>
-							<Button />
+							<Button variant="outlined" />
 						</div>
-						<div className="defaultButton-alt">
+						<div className="outlineButton-alt">
 							<p className="alt">&: hover, &:focus</p>
 							<Button />
 						</div>

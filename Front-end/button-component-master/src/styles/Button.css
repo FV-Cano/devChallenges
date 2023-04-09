@@ -15,6 +15,21 @@
 	margin: 1rem 0;
 }
 
+/* ! || Default-styles */
+
+/* * OUTLINE-ALT */
+
+.group .outlineButton .button,
+.group .outlineButton-alt .button {
+	background-color: transparent;
+	border: 1px solid #3d5afe;
+	color: #3d5afe;
+}
+
+/* ! || Alt-styles */
+
+/* * DEFAULT-ALT */
+
 .defaultButton-alt .button {
 	transition: background-color 0.3s ease-in-out;
 }
@@ -22,5 +37,17 @@
 .defaultButton-alt .button:hover,
 .defaultButton-alt .button:focus {
 	background-color: #aeaeae;
+	cursor: pointer;
+}
+
+/* * OUTLINE-ALT */
+
+.outlineButton-alt .button {
+	transition: background-color 0.3s ease-in-out;
+}
+
+.outlineButton-alt .button:hover,
+.outlineButton-alt .button:focus {
+	background-color: #2962ff1a;
 	cursor: pointer;
 }
