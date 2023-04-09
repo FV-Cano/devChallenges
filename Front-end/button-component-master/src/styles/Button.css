@@ -35,6 +35,15 @@
 	box-shadow: none;
 }
 
+/* * DISABLE-SHADOW */
+
+.button.shadowed {
+	background-color: #3d5afe;
+	border: none;
+	color: #fff;
+	box-shadow: none;
+}
+
 /* ! || Alt-styles */
 
 /* * DEFAULT-ALT */

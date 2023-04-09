@@ -42,6 +42,12 @@ function App() {
 							<Button variant="text" />
 						</div>
 					</div>
+					<div className="group">
+						<div className="disableShadowButton">
+							<p className="name">&lt;Button disableShadow /&gt;</p>
+							<Button disableShadow={false} />
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

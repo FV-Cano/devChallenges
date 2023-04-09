@@ -37,7 +37,7 @@ export const Button = (props: ButtonProps) => {
 	return (
 		<button
 			className={`button ${variant} ${size} ${color}
-			${disableShadow ? "disableShadow" : ""}
+			${disableShadow ? "" : "shadowed"}
 			${disabled ? "disabled" : ""}
 		`}
 		>
