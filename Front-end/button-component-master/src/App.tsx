@@ -131,6 +131,11 @@ function App() {
 						</div>
 					</div>
 				</div>
+				<footer>
+					created by &nbsp;
+					<a href="https://github.com/FV-Cano">FV-Cano</a>
+					&nbsp; - devChallenges.io
+				</footer>
 			</div>
 		</div>
 	);
