@@ -15,9 +15,12 @@
 	margin: 1rem 0;
 }
 
-.defaultButton-alt:hover .button,
-.defaultButton-alt:focus .button {
+.defaultButton-alt .button {
+	transition: background-color 0.3s ease-in-out;
+}
+
+.defaultButton-alt .button:hover,
+.defaultButton-alt .button:focus {
 	background-color: #aeaeae;
 	cursor: pointer;
-	transition: background-color 0.3s ease-in-out;
 }
