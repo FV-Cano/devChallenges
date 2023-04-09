@@ -115,3 +115,23 @@
 	background-color: #2962ff1a;
 	cursor: pointer;
 }
+
+/* * COLORS-ALT */
+
+.primaryButton-alt .button:hover,
+.primaryButton-alt .button:focus {
+	background-color: #0039cb;
+	cursor: pointer;
+}
+
+.secondaryButton-alt .button:hover,
+.secondaryButton-alt .button:focus {
+	background-color: #1c313a;
+	cursor: pointer;
+}
+
+.dangerButton-alt .button:hover,
+.dangerButton-alt .button:focus {
+	background-color: #9a0007;
+	cursor: pointer;
+}

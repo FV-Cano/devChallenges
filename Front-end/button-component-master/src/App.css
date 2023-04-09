@@ -63,6 +63,21 @@
 .buttonGroups,
 #fourth .group {
 	margin-top: 1rem;
+	width: fit-content;
+}
+
+.buttonGroups,
+#fifth .group {
+	margin-top: 1rem;
+	gap: 2rem;
+}
+
+#fifth .defaultButton-alt {
+	min-width: 208px;
+}
+
+#fifth .name {
+	color: #fff;
 }
 
 .buttonGroups .name {

@@ -18,7 +18,7 @@ function App() {
 							<Button />
 						</div>
 						<div className="defaultButton-alt">
-							<p className="alt">&: hover, &:focus</p>
+							<p className="alt">&: hover, &: focus</p>
 							<Button />
 						</div>
 					</div>
@@ -28,7 +28,7 @@ function App() {
 							<Button variant="outlined" />
 						</div>
 						<div className="outlineButton-alt">
-							<p className="alt">&: hover, &:focus</p>
+							<p className="alt">&: hover, &: focus</p>
 							<Button variant="outlined" />
 						</div>
 					</div>
@@ -38,7 +38,7 @@ function App() {
 							<Button variant="text" />
 						</div>
 						<div className="textButton-alt">
-							<p className="alt">&: hover, &:focus</p>
+							<p className="alt">&: hover, &: focus</p>
 							<Button variant="text" />
 						</div>
 					</div>
@@ -106,6 +106,26 @@ function App() {
 							<Button color="secondary" content="Secondary" />
 						</div>
 						<div className="dangerButton">
+							<p className="name">&lt;Button color="danger" /&gt;</p>
+							<Button color="danger" content="Danger" />
+						</div>
+					</div>
+				</div>
+				<div className="buttonGroups" id="fifth">
+					<div className="group">
+						<div className="defaultButton-alt">
+							<p className="alt">&: hover, &: focus </p>
+							<Button />
+						</div>
+						<div className="primaryButton-alt">
+							<p className="name">&lt;Button color="primary" /&gt;</p>
+							<Button color="primary" content="Primary" />
+						</div>
+						<div className="secondaryButton-alt">
+							<p className="name">&lt;Button color="secondary" /&gt;</p>
+							<Button color="secondary" content="Secondary" />
+						</div>
+						<div className="dangerButton-alt">
 							<p className="name">&lt;Button color="danger" /&gt;</p>
 							<Button color="danger" content="Danger" />
 						</div>
