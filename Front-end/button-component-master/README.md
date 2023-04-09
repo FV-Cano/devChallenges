@@ -1,46 +1,71 @@
-# Getting Started with Create React App
+<h1 align="center">Button Component</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+</div>
 
-## Available Scripts
+<div align="center">
+  <h3>
+    <a href="https://button-component-fvcano.netlify.app/">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/FV-Cano/devChallenges/tree/main/Front-end/button-component-master">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-In the project directory, you can run:
+<!-- TABLE OF CONTENTS -->
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Table of Contents](#table-of-contents)
+- [Overview](#overview)
+  - [Built With](#built-with)
+- [Features](#features)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- OVERVIEW -->
 
-### `npm test`
+## Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![screenshot](assets/Screenshot_1.png)
 
-### `npm run build`
+This is the first project I've ever made with React. It was interesting learning how components work and also coding in TSX. It was for sure a better first contact with the framework than with Angular.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The project itself is nothing impressive; it's just a major practice for getting used to working with components. When I started this project, I decided that my path through React was going to be steep in matters of difficulty. First I was going to start with a project only focused on components like this one, then a more complicated project using React Hooks, then start using other libraries, etc. Yet after all this work, I realized that I spent plenty more time working with the CSS code of this project than with React, which is supposed to be the main focus of these front-end challenges.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+That is why, after that sort of revelation, I decided not to struggle with the CSS code (that is why it's a bit clumsy), finish the project as soon as possible, and then start learning about what this framework really has to offer.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Overall, it was a great experience and a nice first glance at React. For the next project, I will try to use different libraries to help me with the front-end process to be able to stop using a lot of pure CSS code.
 
-### `npm run eject`
+### Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [React](https://es.reactjs.org/)
+- [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+- [TS](https://www.typescriptlang.org/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Features
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-## Learn More
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY) was to build an application to complete the given user stories.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Acknowledgements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
+
+- [Icons](https://developers.google.com/fonts/docs/material_icons?hl=es-419#using_the_icons_in_html)
+
+## Contact
+
+- LinkedIn [Federico Vicente Cano](https://www.linkedin.com/in/cano-federico/)
+- GitHub [FV-Cano](https://github.com/FV-Cano)
